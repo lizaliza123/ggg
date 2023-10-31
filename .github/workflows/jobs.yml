@@ -46,7 +46,7 @@ jobs:
 
       - name: Run application container
         run: |
-          cd /AjaxOnBoardRysakov
+          ls
           docker-compose up
 
       - name: Test
