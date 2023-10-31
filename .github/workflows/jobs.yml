@@ -49,6 +49,7 @@ jobs:
           ls
           cp ./docker-compose.yml ./docker-compose.override.yml
           ls /home/runner/work/ggg/ggg/
+          cp Dockerfile /home/runner/work/ggg/ggg/Dockerfile
           docker-compose down
           docker system prune -a -f
           docker-compose up
