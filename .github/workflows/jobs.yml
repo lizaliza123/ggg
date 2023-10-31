@@ -47,6 +47,7 @@ jobs:
       - name: Run application container
         run: |
           ls
+          cp ./docker-compose.yml ./docker-compose.override.yml
           docker-compose down
           docker system prune -a -f
           docker-compose up
