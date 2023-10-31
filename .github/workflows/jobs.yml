@@ -48,7 +48,7 @@ jobs:
         run: |
           ls
           cp ./docker-compose.yml ./docker-compose.override.yml
-          ls
+          ls /home/runner/work/ggg/ggg/
           docker-compose down
           docker system prune -a -f
           docker-compose up
