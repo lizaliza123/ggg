@@ -44,5 +44,9 @@ jobs:
 #          systemctl start mongod
 #          mongosh
 
+      - name: Run application container
+        run: |
+          docker-compose up
+
       - name: Test
         run: ./gradlew test
